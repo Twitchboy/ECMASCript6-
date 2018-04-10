@@ -1,0 +1,27 @@
+{
+  "name": "Koa2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev_import": "nodemon -w lesson2\/src\/import.js --exec \"babel-node lesson2/src/import.js --presets env\"",
+    "build_lesson2": "rimraf lesson2\/dist && babel lesson2\/src -s -D -d lesson2\/dist --presets env",
+    "build_generator": "babel lesson2\/co.js -s -D -d lesson2\/dist --presets env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-runtime": "^6.26.0",
+    "nodemon": "^1.17.3",
+    "rimraf": "^2.6.2"
+  }
+}
